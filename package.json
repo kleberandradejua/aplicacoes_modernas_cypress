@@ -1,0 +1,14 @@
+{
+  "name": "cypress_aquino",
+  "version": "1.0.0",
+  "description": "para o curso de cypress do professor aquino",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "kleber de andrade",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^10.11.0"
+  }
+}
