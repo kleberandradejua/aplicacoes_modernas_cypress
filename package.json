@@ -10,5 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "cypress": "^10.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleberandradejua/aplicacoes_modernas_cypress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kleberandradejua/aplicacoes_modernas_cypress/issues"
+  },
+  "homepage": "https://github.com/kleberandradejua/aplicacoes_modernas_cypress#readme"
 }

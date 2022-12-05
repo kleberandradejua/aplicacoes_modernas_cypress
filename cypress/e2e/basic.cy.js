@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
 
-it('teste', ()=> {
+describe('Cypress basics', () => {
     
 })
