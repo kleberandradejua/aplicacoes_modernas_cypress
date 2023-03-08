@@ -1,21 +1,27 @@
 /// <reference types="cypress" />
 
 describe('Cypress basics', () => {
-    it('Deve visitar a página e verificar o título', () =>{
+    it.only('Deve visitar a página e verificar o título', () =>{
         cy.visit('https://wcaquino.me/cypress/componentes.html')
 
         cy.title()
         .should('be.equal', 'Campo de Treinamento')
         .and('contain', 'Campo')
 
-        const title = cy.title()
+        cy.title().then(title => {
+            console.log(title)
+
+            cy.get('#formNome').type(title)
+        })
+
+        /*const title = cy.title()
         console.log(title)
 
-        cy.get('#formNome').type(title)
+        cy.get('#formNome').type(title)*/
 
     })
 
-    it.only('Encontrar e interagir com um elemento', () => {
+    it('Encontrar e interagir com um elemento', () => {
         cy.visit('https://wcaquino.me/cypress/componentes.html')
 
         cy.pause()
